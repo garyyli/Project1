@@ -12,21 +12,21 @@ square7 = 7
 square8 = 8
 square9 = 9
 
-if __name__ == '__main__':
-    def printBoard():
-        print('_____________')
-        print('|', square1, '|', square2, '|',square3, '|')
-        print('_____________')
-        print('|', square4, '|', square5, '|',square6, '|')
-        print('_____________')
-        print('|', square7, '|', square8, '|',square9, '|')
-        print('_____________')
+def printBoard():
+    print('_____________')
+    print('|', square1, '|', square2, '|',square3, '|')
+    print('_____________')
+    print('|', square4, '|', square5, '|',square6, '|')
+    print('_____________')
+    print('|', square7, '|', square8, '|',square9, '|')
+    print('_____________')
 
-    def isEmpty(numSquare):
-        if 'X' in numSquare or 'O' in numSquare:
-            return False
-        else:
-            return True
+def isEmpty(numSquare):
+    if 'X' in numSquare or 'O' in numSquare:
+        return False
+    else:
+        return True
+    
         
         
     isEmpty(int(input('Where would you like to go?')))
