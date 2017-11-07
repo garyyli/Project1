@@ -22,42 +22,51 @@ def printBoard():
     print('_____________')
 
 def isEmpty(squareChosen):
-    if 'X' in square1 or 'O' in square1:
-        return False
-    else:
-        return True
-    if 'X' in square2 or 'O' in square2:
-        return False
-    else:
-        return True
-    if 'X' in square3 or 'O' in square3:
-        return False
-    else:
-        return True
-    if 'X' in square4 or 'O' in square4:
-        return False
-    else:
-        return True
-    if 'X' in square5 or 'O' in square5:
-        return False
-    else:
-        return True
-    if 'X' in square6 or 'O' in square6:
-        return False
-    else:
-        return True
-    if 'X' in square7 or 'O' in square7:
-        return False
-    else:
-        return True
-    if 'X' in square8 or 'O' in square8:
-        return False
-    else:
-        return True
-    if 'X' in square9 or 'O' in square9:
-        return False
-    else:
-        return True
+    if squareChosen == 1:
+        if 'X' in square1 or 'O' in square1:
+            return False
+        else:
+            return True
+    if squareChosen == 2:
+        if 'X' in square2 or 'O' in square2:
+            return False
+        else:
+            return True
+    if squareChosen == 3:
+        if 'X' in square3 or 'O' in square3:
+            return False
+        else:
+            return True
+    if squareChosen == 4:
+        if 'X' in square4 or 'O' in square4:
+            return False
+        else:
+            return True
+    if squareChosen == 5:
+        if 'X' in square5 or 'O' in square5:
+            return False
+        else:
+            return True
+    if squareChosen == 6:
+        if 'X' in square6 or 'O' in square6:
+            return False
+        else:
+            return True
+    if squareChosen == 7:
+        if 'X' in square7 or 'O' in square7:
+            return False
+        else:
+            return True
+    if squareChosen == 8:
+        if 'X' in square8 or 'O' in square8:
+            return False
+        else:
+            return True
+    if squareChosen == 9:
+        if 'X' in square9 or 'O' in square9:
+            return False
+        else:
+            return True
 
 def fullBoard(squareChosen):
     if square1 == 'X' or square1 == 'O':
