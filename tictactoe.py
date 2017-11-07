@@ -73,25 +73,27 @@ def fullBoard(squareChosen):
     else: return False
 
 if __name__ == '__main__':
-    printBoard()
-    squareChosen=(int(input('Where would you like to go?')))
-    if squareChosen == 1:
-        square1 = 'X'
-    if squareChosen == 2:
-        square2 = 'X'
-    if squareChosen == 3:
-        square3 = 'X'
-    if squareChosen == 4:
-        square4 = 'X'
-    if squareChosen == 5:
-        square5 = 'X'
-    if squareChosen == 6:
-        square6 = 'X'
-    if squareChosen == 7:
-        square7 = 'X'
-    if squareChosen == 8:
-        square8 = 'X'
-    if squareChosen == 9:
-        square9 = 'X'
-    printBoard()
-    
+    while True:
+        printBoard()
+        squareChosen=(int(input('Where would you like to go?')))
+        if squareChosen == 1:
+            square1 = 'X'
+        if squareChosen == 2:
+            square2 = 'X'
+        if squareChosen == 3:
+            square3 = 'X'
+        if squareChosen == 4:
+            square4 = 'X'
+        if squareChosen == 5:
+            square5 = 'X'
+        if squareChosen == 6:
+            square6 = 'X'
+        if squareChosen == 7:
+            square7 = 'X'
+        if squareChosen == 8:
+            square8 = 'X'
+        if squareChosen == 9:
+            square9 = 'X'
+        if fullBoard(squareChosen) is True:
+            break
+        
