@@ -21,13 +21,43 @@ def printBoard():
     print('|', square7, '|', square8, '|',square9, '|')
     print('_____________')
 
-def isEmpty(numSquare):
-    if 'X' in numSquare or 'O' in numSquare:
+def isEmpty():
+    if 'X' in square1 or 'O' in square1:
         return False
     else:
         return True
-    
-        
-        
-    isEmpty(int(input('Where would you like to go?')))
-    printBoard()
+    if 'X' in square2 or 'O' in square2:
+        return False
+    else:
+        return True
+    if 'X' in square3 or 'O' in square3:
+        return False
+    else:
+        return True
+    if 'X' in square4 or 'O' in square4:
+        return False
+    else:
+        return True
+    if 'X' in square5 or 'O' in square5:
+        return False
+    else:
+        return True
+    if 'X' in square6 or 'O' in square6:
+        return False
+    else:
+        return True
+    if 'X' in square7 or 'O' in square7:
+        return False
+    else:
+        return True
+    if 'X' in square8 or 'O' in square8:
+        return False
+    else:
+        return True
+    if 'X' in square9 or 'O' in square9:
+        return False
+    else:
+        return True
+isEmpty(int(input('Where would you like to go?')))
+
+printBoard()
