@@ -150,4 +150,8 @@ if __name__ == '__main__':
         if fullBoard(squareChosen) is True:
             printBoard()
             break
+    if winner() is True:
+        print('We have a winner!')
+    elif fullBoard(squareChosen) is True:
+        print('We have a winner!')
         
