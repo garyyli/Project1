@@ -2,6 +2,8 @@
 #11/1/17
 #tictactoe.py
 
+from random import randint
+
 square1 = 1
 square2 = 2
 square3 = 3
@@ -23,47 +25,47 @@ def printBoard():
 
 def isEmpty(squareChosen):
     if squareChosen == 1:
-        if 'X' in square1 or 'O' in square1:
+        if square1 == 'X' or square1 == 'O':
             return False
         else:
             return True
-    if squareChosen == 2:
-        if 'X' in square2 or 'O' in square2:
+    elif squareChosen == 2:
+        if square2 == 'X' or square2 == 'O':
             return False
         else:
             return True
-    if squareChosen == 3:
-        if 'X' in square3 or 'O' in square3:
+    elif squareChosen == 3:
+        if square3 == 'X' or square3 == 'O':
             return False
         else:
             return True
-    if squareChosen == 4:
-        if 'X' in square4 or 'O' in square4:
+    elif squareChosen == 4:
+        if square4 == 'X' or square4 == 'O':
             return False
         else:
             return True
-    if squareChosen == 5:
-        if 'X' in square5 or 'O' in square5:
+    elif squareChosen == 5:
+        if square5 == 'X' or square5 == 'O':
             return False
         else:
             return True
-    if squareChosen == 6:
-        if 'X' in square6 or 'O' in square6:
+    elif squareChosen == 6:
+        if square6 == 'X' or square6 == 'O':
             return False
         else:
             return True
-    if squareChosen == 7:
-        if 'X' in square7 or 'O' in square7:
+    elif squareChosen == 7:
+        if square7 == 'X' or square7 == 'O':
             return False
         else:
             return True
-    if squareChosen == 8:
-        if 'X' in square8 or 'O' in square8:
+    elif squareChosen == 8:
+        if square8 == 'X' or square8 == 'O':
             return False
         else:
             return True
-    if squareChosen == 9:
-        if 'X' in square9 or 'O' in square9:
+    elif squareChosen == 9:
+        if square9 == 'X' or square9 == 'O':
             return False
         else:
             return True
