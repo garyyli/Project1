@@ -83,6 +83,32 @@ def fullBoard(squareChosen):
                                         return True
     else: return False
 
+def winner():
+    if square1 == 'X' and square2 == 'X' and square3 == 'X':
+        return True
+    if square1 == 'O' and square2 == 'O' and square3 == 'O':
+        return True
+    if square4 == 'X' and square5 == 'X' and square6 == 'X':
+        return True
+    if square4 == 'O' and square5 == 'O' and square6 == 'O':
+        return True
+    if square7 == 'X' and square8 == 'X' and square9 == 'X':
+        return True
+    if square7 == 'O' and square8 == 'O' and square9 == 'O':
+        return True
+    if square1 == 'X' and square4 == 'X' and square7 == 'X':
+        return True
+    if square1 == 'O' and square4 == 'O' and square7 == 'O':
+        return True
+    if square2 == 'X' and square5 == 'X' and square8 == 'X':
+        return True
+    if square2 == 'O' and square5 == 'O' and square8 == 'O':
+        return True
+    if square3 == 'X' and square6 == 'X' and square9 == 'X':
+        return True
+    if square3 == 'O' and square6 == 'O' and square9 == 'O':
+        return True
+
 if __name__ == '__main__':
     while True:
         printBoard()
