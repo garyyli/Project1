@@ -108,6 +108,16 @@ def winner():
         return True
     if square3 == 'O' and square6 == 'O' and square9 == 'O':
         return True
+    if square1 == 'X' and square5 == 'X' and square9 == 'X':
+        return True
+    if square1 == 'O' and square5 == 'O' and square9 == 'O':
+        return True
+    if square3 == 'X' and square5 == 'X' and square7 == 'X':
+        return True
+    if square3 == 'O' and square5 == 'O' and square7 == 'O':
+        return True
+    else:
+        return False
 
 if __name__ == '__main__':
     while True:
@@ -134,6 +144,10 @@ if __name__ == '__main__':
             square8 = 'X'
         elif squareChosen == 9:
             square9 = 'X'
+        if winner() is True:
+            printBoard()
+            break
         if fullBoard(squareChosen) is True:
+            printBoard()
             break
         
