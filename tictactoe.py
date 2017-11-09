@@ -184,7 +184,3 @@ if __name__ == '__main__':
         print('We have a winner!')
     elif fullBoard(squareChosen) is True:
         print('No one wins :(')
-        
-    
-    
-        
