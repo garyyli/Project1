@@ -144,6 +144,12 @@ if __name__ == '__main__':
             square8 = 'X'
         elif squareChosen == 9:
             square9 = 'X'
+        if winner() is True:
+            printBoard()
+            break
+        elif fullBoard(squareChosen) is True:
+            printBoard()
+            break
         computerTurn = randint(1,9)
         while isEmpty(computerTurn) == False:
             computerTurn = randint(1,9)
