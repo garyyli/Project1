@@ -122,10 +122,10 @@ def winner():
 if __name__ == '__main__':
     while True:
         printBoard()
-        squareChosen=(int(input('Where would you like to go?')))
+        squareChosen=(int(input('Where would you like to go? (type a number that corresponds with box)')))
         while isEmpty(squareChosen) == False:
             print('Try another square')
-            squareChosen=(int(input('Where would you like to go?')))
+            squareChosen=(int(input('Where would you like to go? (type a number that corresponds with box)')))
         if squareChosen == 1:
             square1 = 'X'
         elif squareChosen == 2:
