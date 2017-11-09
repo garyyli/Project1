@@ -177,7 +177,7 @@ if __name__ == '__main__':
         if winner() is True:
             printBoard()
             break
-        if fullBoard(squareChosen) is True:
+        elif fullBoard(squareChosen) is True:
             printBoard()
             break
     if winner() is True:
