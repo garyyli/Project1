@@ -144,6 +144,36 @@ if __name__ == '__main__':
             square8 = 'X'
         elif squareChosen == 9:
             square9 = 'X'
+        computerTurn = randint(1,9)
+        while isEmpty(computerTurn) == False:
+            computerTurn = randint(1,9)
+        if computerTurn == 1:
+            square1 = 'O'
+            print('The computer went', computerTurn)
+        elif computerTurn == 2:
+            square2 = 'O'
+            print('The computer went', computerTurn)
+        elif computerTurn == 3:
+            square3 = 'O'
+            print('The computer went', computerTurn)
+        elif computerTurn == 4:
+            square4 = 'O'
+            print('The computer went', computerTurn)
+        elif computerTurn == 5:
+            square5 = 'O'
+            print('The computer went', computerTurn)
+        elif computerTurn == 6:
+            square6 = 'O'
+            print('The computer went', computerTurn)
+        elif computerTurn == 7:
+            square7 = 'O'
+            print('The computer went', computerTurn)
+        elif computerTurn == 8:
+            square8 = 'O'
+            print('The computer went', computerTurn)
+        elif computerTurn == 9:
+            square9 = 'O'
+            print('The computer went', computerTurn)
         if winner() is True:
             printBoard()
             break
@@ -153,5 +183,8 @@ if __name__ == '__main__':
     if winner() is True:
         print('We have a winner!')
     elif fullBoard(squareChosen) is True:
-        print('We have a winner!')
+        print('No one wins :(')
+        
+    
+    
         
