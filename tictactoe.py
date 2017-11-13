@@ -14,7 +14,7 @@ square7 = 7
 square8 = 8
 square9 = 9
 
-def printBoard():
+def printBoard(): #prints out the board
     print('_____________')
     print('|', square1, '|', square2, '|',square3, '|')
     print('_____________')
@@ -23,7 +23,7 @@ def printBoard():
     print('|', square7, '|', square8, '|',square9, '|')
     print('_____________')
 
-def isEmpty(squareChosen):
+def isEmpty(squareChosen): #determines whether or not a square is empty for the player to make a move in
     if squareChosen == 1:
         if square1 == 'X' or square1 == 'O':
             return False
