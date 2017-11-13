@@ -70,7 +70,7 @@ def isEmpty(squareChosen): #determines whether or not a square is empty for the 
         else:
             return True
 
-def fullBoard(squareChosen):
+def fullBoard(squareChosen): #determines whether or not the board is full (no more moves left)
     if square1 == 'X' or square1 == 'O':
         if square2 == 'X' or square2 == 'O':
             if square3 == 'X' or square3 == 'O':
