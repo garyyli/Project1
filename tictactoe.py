@@ -125,7 +125,7 @@ if __name__ == '__main__': #runs the game (computer and player take turns moving
         squareChosen=(int(input('Where would you like to go? (type a number that corresponds with box)')))
         while isEmpty(squareChosen) == False:
             print('Try another square')
-            squareChosen=(int(input('Where would you like to go? (type a number that corresponds with box)')))
+            squareChosen=(int(input('Where would you like to go? (type a number between 1-9 that corresponds with box)')))
         if squareChosen == 1:
             square1 = 'X'
         elif squareChosen == 2:
