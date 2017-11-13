@@ -1,6 +1,6 @@
 #Gary Li
 #11/1/17
-#tictactoe.py
+#tictactoe.py - a game of tictactoe (singleplayer)
 
 from random import randint
 
