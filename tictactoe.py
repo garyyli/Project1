@@ -83,7 +83,7 @@ def fullBoard(squareChosen): #determines whether or not the board is full (no mo
                                         return True
     else: return False
 
-def winner():
+def winner(): #determines whether or not the player or computer has won the game
     if square1 == 'X' and square2 == 'X' and square3 == 'X':
         return True
     elif square1 == 'O' and square2 == 'O' and square3 == 'O':
@@ -119,7 +119,7 @@ def winner():
     else:
         return False
 
-if __name__ == '__main__':
+if __name__ == '__main__': #runs the game (computer and player take turns moving in this section)
     while True:
         printBoard()
         squareChosen=(int(input('Where would you like to go? (type a number that corresponds with box)')))
